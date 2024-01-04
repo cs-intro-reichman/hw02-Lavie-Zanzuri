@@ -46,7 +46,6 @@ public class OneOfEachStats {
 					count = count + 1;
 					sum = sum + 1;
 				}
-				
 			}
 			if(count == 2) {
 				count2 = count2 + 1;
