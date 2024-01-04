@@ -30,7 +30,7 @@ public class OneOfEachStats {
 		int sum = 0;
 		double average;
 		for(int i=0; i < T;i++) {
-			
+			//double num1 = generator.nextDouble();
 			boolean girl = false;
 			boolean boy = false;
 			int count = 0;
@@ -58,11 +58,11 @@ public class OneOfEachStats {
 				count4 = count4 + 1;
 			}
 		}
-		average = (double) sum / T;
+		average = (double)sum / T;
 		System.out.println("Average: "+ average + " children to get at least one of each gender");
 		System.out.println("Number of families with 2 children: " + count2);
 		System.out.println("Number of families with 3 children: " + count3);
-		System.out.println("Number of families with 4 children or more: " + count4);
+		System.out.println("Number of families with 4 or more children: " + count4);
 		if(count2 > count3 && count2 > count4) {
 			System.out.println("The most common number of children is 2");
 		}
