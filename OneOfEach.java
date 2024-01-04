@@ -6,12 +6,12 @@
 public class OneOfEach {
 	public static void main (String[] args) {
 		//// Put your code here
-		double num1 = Math.random();
 		boolean girl = false;
 		boolean boy = false;
 		int count = 0;
 		while(girl == false || boy == false) {
-			if(num1 > 0.5) {
+			num1 = Math.random();
+			if(num1 >= 0.5) {
 				System.out.print("g ");
 				girl = true;
 				count = count + 1;
@@ -21,9 +21,8 @@ public class OneOfEach {
 				boy = true;
 				count = count + 1;
 			}
-			num1 = Math.random();
 		}
 		System.out.println();
-		System.out.println("You made it... and now you have " + count +" children");	
+		System.out.println("You made it... and now you have " + count +" children.");	
 	}
 }
