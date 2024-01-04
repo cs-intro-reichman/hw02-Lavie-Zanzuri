@@ -30,12 +30,13 @@ public class OneOfEachStats {
 		int sum = 0;
 		double average;
 		for(int i=0; i < T;i++) {
-			double num1 = generator.nextDouble();
+			
 			boolean girl = false;
 			boolean boy = false;
 			int count = 0;
 			while(girl == false || boy == false) {
-				if(num1 > 0.5) {
+				double num1 = generator.nextDouble();
+				if(num1 >= 0.5) {
 					girl = true;
 					count = count + 1;
 					sum = sum + 1;
@@ -45,7 +46,7 @@ public class OneOfEachStats {
 					count = count + 1;
 					sum = sum + 1;
 				}
-				num1 = generator.nextDouble();
+				
 			}
 			if(count == 2) {
 				count2 = count2 + 1;
@@ -57,7 +58,7 @@ public class OneOfEachStats {
 				count4 = count4 + 1;
 			}
 		}
-		average = (double)sum / T;
+		average = (double) (sum / T);
 		System.out.println("Average: "+ average + " children to get at least one of each gender");
 		System.out.println("Number of families with 2 children: " + count2);
 		System.out.println("Number of families with 3 children: " + count3);
