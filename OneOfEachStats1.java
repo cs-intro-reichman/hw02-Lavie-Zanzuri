@@ -13,7 +13,7 @@ public class OneOfEachStats1 {
 		int count4 = 0;
 		int sum = 0;
 		double average;
-		for(int i=0; i < t;i++) {
+		for(int i = 0; i < t;i ++) {
 			boolean girl = false;
 			boolean boy = false;
 			int count = 0;
