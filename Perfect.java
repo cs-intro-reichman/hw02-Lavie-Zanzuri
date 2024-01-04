@@ -9,7 +9,7 @@ public class Perfect {
 		int j = 1;
 		for(int i = 1;i < num;i ++) {
 			if(num%i==0) { 
-				count=count + i;
+				count = count + i;
 			}
 		}
 		if(count == num) {
