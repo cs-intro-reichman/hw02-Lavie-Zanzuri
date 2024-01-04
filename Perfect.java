@@ -7,9 +7,9 @@ public class Perfect {
 		int num = Integer.parseInt(args[0]);
 		int count = 0;
 		int j = 1;
-		for(int i =1;i<num;i++) {
+		for(int i = 1;i < num;i ++) {
 			if(num%i==0) { 
-				count=count+i;
+				count=count + i;
 			}
 		}
 		if(count == num) {
