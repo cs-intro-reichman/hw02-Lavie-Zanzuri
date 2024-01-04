@@ -29,7 +29,7 @@ public class OneOfEachStats {
 		int count4 = 0;
 		int sum = 0;
 		double average;
-		for(int i=0; i < T;i++) {
+		for(int i = 0; i < T;i ++) {
 			//double num1 = generator.nextDouble();
 			boolean girl = false;
 			boolean boy = false;
