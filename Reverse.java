@@ -3,7 +3,7 @@
  * The program expects to get one command-line argument: A string.
  */
 public class Reverse {
-	public static void main (String[] args){
+	public static void main (String[] args) {
 		//// Put your code here
 		String str = args[0];
 		String reverse = "";
